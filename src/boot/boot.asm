@@ -22,7 +22,7 @@ step2:
 	mov sp, 0x7c00
 	sti			;Enable Interrupts
 
-.laod_protected:
+.load_protected:
 	cli
 	lgdt[gdt_descriptor]	;Load GDT
 	mov eax, cr0
